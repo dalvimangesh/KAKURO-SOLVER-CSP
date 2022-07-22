@@ -1,5 +1,5 @@
 # KAKURO-SOLVER-CSP
-Model of the logic puzzle Kakuro as a constraint problem with finite domain variables
+### Model of the logic puzzle Kakuro as a constraint problem with finite domain variables
 
 The canonical Kakuro puzzle is played in a grid of filled and barred cells, "black" and "white" respectively. Puzzles are usually 16×16 in size, although these dimensions can vary widely. Apart from the top row and leftmost column which are entirely black, the grid is divided into "entries"—lines of white cells—by the black cells. The black cells contain a diagonal slash from upper-left to lower-right and a number in one or both halves, such that each horizontal entry has a number in the black half-cell to its immediate left and each vertical entry has a number in the black half-cell immediately above it. These numbers, borrowing crossword terminology, are commonly called "clues".
 
@@ -11,6 +11,17 @@ The objective of the puzzle is to insert a digit from 1 to 9 inclusive into each
 # Report
 
 ![image](https://user-images.githubusercontent.com/75742776/180458859-28743230-cddd-4d2f-b533-f09c87f5229b.png)
+
+#### Defination of the variable used in table : 
+
+Count BS - No.of backtrack calls in generic backtracking search with AC-3 applied before to reduce domain.
+
+Count MAC - No.of backtrack calls in backtracking search with Maintaining Arc Consistency after each variable assignment.
+
+Time BS - Time taken in seconds for generic backtracking search.
+
+Time MAC - Time taken in seconds for backtracking search with Maintaining arc consistency.
+
 
 
 ## Formulating the puzzle as general CSP:
